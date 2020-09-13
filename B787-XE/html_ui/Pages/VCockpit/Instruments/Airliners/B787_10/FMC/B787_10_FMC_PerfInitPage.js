@@ -34,7 +34,7 @@ class B787_10_FMC_PerfInitPage {
         }
         let zfwCell = "□□□.□";
         if (fmc.zeroFuelWeight) {
-            zfwCell = fmc.zeroFuelWeight.toFixed(1);
+            zfwCell = fmc.getZeroFuelWeight(true).toFixed(1);
         }
         fmc.onLeftInput[2] = () => {
             let value = fmc.inOut;
