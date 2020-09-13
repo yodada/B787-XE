@@ -59,7 +59,7 @@ class B787_10_FMC_PerfInitPage {
         };
         let crzCGCell = "20.0%";
         if (fmc.zeroFuelWeightMassCenter) {
-            zfwCell = fmc.zeroFuelWeightMassCenter.toFixed(1) + "%";
+            crzCGCell = fmc.zeroFuelWeightMassCenter.toFixed(1) + "%";
         }
         fmc.onRightInput[3] = () => {
             let value = fmc.inOut;
