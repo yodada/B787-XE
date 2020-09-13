@@ -4,7 +4,7 @@ class B787_10_FMC_PerfInitPage {
         let grWtCell = "□□□.□";
         let grossWeightValue = fmc.getWeight(true);
         if (isFinite(grossWeightValue)) {
-            grWtCell = grossWeightValue.toFixed(1);
+            grWtCell = grossWeightValue.toFixed(1) + " lb";;
         }
         if (isFinite(fmc.zeroFuelWeight)) {
             fmc.onLeftInput[0] = () => {
@@ -34,7 +34,7 @@ class B787_10_FMC_PerfInitPage {
         }
         let zfwCell = "□□□.□";
         if (fmc.zeroFuelWeight) {
-            zfwCell = fmc.getZeroFuelWeight(true).toFixed(1);
+            zfwCell = fmc.getZeroFuelWeight(true).toFixed(1) + " lb";;
         }
         fmc.onLeftInput[2] = () => {
             let value = fmc.inOut;
