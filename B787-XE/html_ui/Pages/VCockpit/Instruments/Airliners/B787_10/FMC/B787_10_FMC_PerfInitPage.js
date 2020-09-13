@@ -43,7 +43,7 @@ class B787_10_FMC_PerfInitPage {
                 if (result) {
                     B787_10_FMC_PerfInitPage.ShowPage1(fmc);
                 }
-            });
+            }, true);
         };
         let reservesCell = "□□□.□";
         let reservesWeightValue = fmc.getRouteReservedWeight();
