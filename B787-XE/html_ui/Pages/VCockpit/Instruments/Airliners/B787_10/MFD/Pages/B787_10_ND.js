@@ -614,9 +614,9 @@ class B787_10_ND_Map extends MapInstrumentElement {
                     this.instrument.style.top = "0%";
                     this.instrument.rotateWithPlane(true);
                     this.instrument.centerOnActiveWaypoint(false);
-                    this.instrument.setPlaneScale(4.3);
+                    this.instrument.setPlaneScale(2.0);
                     this.instrument.setPlaneIcon(1);
-                    this.instrument.zoomRanges = this.getAdaptiveRanges(2.3);
+                    this.instrument.zoomRanges = this.getAdaptiveRanges(4.5);
                     this._parent.setAttribute("mapstyle", "rose");
                     break;
                 }
